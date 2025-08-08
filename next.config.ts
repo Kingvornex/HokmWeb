@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Needed for GitHub Pages
+  // Needed for GitHub Pages static export
   output: 'export',
   images: { unoptimized: true },
-  basePath: '/HokmWeb', // ❗ Change this if your repo is NOT username.github.io
+  basePath: '/HokmWeb', // Change to your repo name
 
-  // Keep your existing settings
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -14,7 +13,7 @@ const nextConfig: NextConfig = {
   webpack: (config, { dev }) => {
     if (dev) {
       config.watchOptions = {
-        ignored: ['**/*'],
+        ignored: ['**/*'], // disables watch on all files in dev (optional)
       };
     }
     return config;
@@ -23,5 +22,5 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 };
-export const output = 'export';
+
 export default nextConfig;
