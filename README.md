@@ -1,3 +1,80 @@
+
+# 🎮 HokmWeb
+
+**HokmWeb** is an online multiplayer **Hokm** card game designed as a **mobile-friendly web app** using [Next.js](https://nextjs.org/).  
+It can be played in any modern browser and is optimized for Android devices, offering a smooth and responsive experience.
+
+## 📌 Features
+- 🃏 **Classic Hokm gameplay** with realistic rules
+- 📱 **Mobile-first design** — works seamlessly on Android browsers
+- 🌐 **Online multiplayer** — play with friends or random players
+- ⚡ **Fast & responsive UI** powered by Next.js
+- 🎨 Clean interface for enjoyable play
+
+## 🚀 Tech Stack
+- **Frontend Framework:** Next.js (React)
+- **Styling:** Tailwind CSS (or other CSS framework if you change)
+- **Realtime:** WebSockets / Socket.IO (for multiplayer)
+- **Deployment:** Vercel / Node.js server
+- **Platform:** Mobile-friendly, Android-optimized PWA
+
+## 📂 Project Structure
+```
+
+HokmWeb/
+│── public/          # Static assets (images, icons, manifest)
+│── pages/           # Next.js pages and routes
+│── components/      # Reusable UI components
+│── styles/          # Global styles
+│── utils/           # Game logic helpers
+│── server/          # Realtime server (WebSocket)
+│── package.json     # Dependencies & scripts
+
+````
+
+## 🛠 Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Kingvornex/HokmWeb.git
+cd HokmWeb
+````
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+4. Open in browser:
+
+```
+http://localhost:3000
+```
+
+## 📱 Android Support
+
+HokmWeb is fully optimized for **mobile play**:
+
+* Install as a **PWA** for a native-like experience
+* Works on all Chromium-based Android browsers
+
+## 📜 License
+
+This project is licensed under the **MIT License** — feel free to use and modify.
+
+---
+
+**👑 Author:** [King Vornex](https://github.com/Kingvornex)
+
+---
+
 # HokmWeb
 
 This Next.js app uses the new App Router (introduced in Next.js 13), the root page is at src/app/page.tsx instead of pages/index.tsx.
